@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function checkName() {
+            let name = document.getElementById("nameInput").value.trim().toLowerCase();
+            if (name === "suji varsha" || name === "suji" || name === "varsha") {
+                window.location.href = "second.html";
+            } else {
+                alert("Sorry, this page is only for someone special! 😊");
+            }
+        }
+    </script>
+</head>
+<body class="first-page">
+    <div class="container">
+        <h1>Hi! Enter Your Name</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name...">
+        <button onclick="checkName()">Submit</button>
+    </div>
+</body>
+</html>
